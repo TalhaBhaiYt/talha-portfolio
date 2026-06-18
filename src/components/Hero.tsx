@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Play, ArrowRight, Download, Gamepad2, Sparkles, Terminal } from 'lucide-react';
 import { ThemeMode } from '../types';
 import { HERO_TITLES } from '../data';
-import talhaAvatar from '../assets/images/talha_avatar_1781795347931.jpg';
 
 interface HeroProps {
   themeMode: ThemeMode;
@@ -257,15 +256,11 @@ export default function Hero({ themeMode, onNavigateToProjects, onNavigateToCont
               {/* Fallback pattern in case image gets restricted */}
               <img
                 id="developer-avatar-img"
-                src={talhaAvatar}
+                src="/src/assets/images/talha_avatar_1781795347931.jpg"
                 alt="Talha - High Tech Developer Avatar"
                 referrerPolicy="no-referrer"
                 loading="eager"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                onError={(e) => {
-                  // Fallback in case image loading fails
-                  e.currentTarget.src = "https://picsum.photos/seed/talha/500/500";
-                }}
               />
 
               {/* Developer stats cards overlays */}
