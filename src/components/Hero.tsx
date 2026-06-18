@@ -256,7 +256,7 @@ export default function Hero({ themeMode, onNavigateToProjects, onNavigateToCont
               {/* Fallback pattern in case image gets restricted */}
               <img
                 id="developer-avatar-img"
-                src="/src/assets/images/talha_avatar_1781795347931.jpg"
+                src="/talha-avatar.jpg"
                 alt="Talha - High Tech Developer Avatar"
                 referrerPolicy="no-referrer"
                 loading="eager"
